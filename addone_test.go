@@ -7,6 +7,8 @@ func TestAddone(t *testing.T) {
 		in, want int
 	}{
 		{1, 2},
+		{-5, -4},
+		{100, 101},
 	} {
 		got := addone(c.in)
 		if got != c.want {
