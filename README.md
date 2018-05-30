@@ -90,6 +90,8 @@ function build_bin() {
 
 ### 4.	Point preferred Continuous Integration tool to independent scripts and profit
 
+NOTE: This requires the Golang plugin installed in Jenkins and configured in the Jenkins global tools section, not general configuration
+
 Integrating Jenkins or any Continuous Integration tool is now straight forward. Additionally, the configuration now exists in source control for an added benefit instead of living in Jenkins or similar tool.
 
 Adding additional steps is a matter of adding new shell scripts and wiring them into Jenkins. Perhaps one might build a docker container as a step and then deploy to Kubernetes as another. In the future multiple environments can also be shell scripts, perhaps sharing configuration variables so the build process can be clean and easy to follow. A great amount of complexity can be avoided with a little best practice.
