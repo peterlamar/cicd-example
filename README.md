@@ -90,7 +90,13 @@ function build_bin() {
 
 ### 4.	Point preferred Continuous Integration tool to independent scripts and profit
 
-NOTE: This requires the Golang plugin installed in Jenkins and configured in the Jenkins global tools section, not general configuration
+NOTE: This requires the Golang plugin installed in Jenkins and configured in the Jenkins global tools section, not general configuration. The name in global tools must match the name of the tool in the jenkinsfile.
+
+```
+tools {
+    go "Go 1.10.2"
+}
+```
 
 Integrating Jenkins or any Continuous Integration tool is now straight forward. Additionally, the configuration now exists in source control for an added benefit instead of living in Jenkins or similar tool.
 
