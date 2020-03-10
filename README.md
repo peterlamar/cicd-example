@@ -49,7 +49,7 @@ func TestAddone(t *testing.T) {
 
 ### 3.	Trigger stages with discrete, scriptable steps
 
-Nearly every Continuous Integration tool including Jenkins, etc operate by triggering a series of arbitrary tasks. Having these tasks independent and able to trigger locally will save an immense amount of time over having this configuration exist entirely in the tool such as Jenkins. Entering configuration in Jenkins and triggering the build to trouble shoot. Its 30 sec to run a shell script locally to 3-10 min of turn around waiting for Jenkins to spin up a worker and kick off the script.
+Nearly every Continuous Integration tool including Jenkins, etc operate by triggering a series of arbitrary tasks. Having these tasks independent and able to trigger locally will save an immense amount of time over having this configuration exist entirely in the tool such as Jenkins. Entering configuration in Jenkins and triggering the build to trouble shoot. Its 30 sec to run a shell script locally to 3-10 min of time waiting for Jenkins to spin up a worker and kick off the script.
 
 build-bin.sh
 ```
